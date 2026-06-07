@@ -1,0 +1,211 @@
+# ---------------------------------------------------------------------------
+# This file holds all the content for the website.
+# Edit the text here to update the site — you do not need to touch HTML.
+# Lines starting with "#" are notes and are ignored.
+# ---------------------------------------------------------------------------
+
+profile:
+  name: "Julia Minji Kim"
+  title: "Doctor of Medicine · Intern, Mount Gambier Hospital"
+  location: "Mount Gambier, South Australia"
+  email: "Juliakim370@gmail.com"
+
+summary: >-
+  Current intern at Mount Gambier Hospital and Doctor of Medicine graduate of
+  Flinders University, with clinical experience across regional and metropolitan
+  South Australia and an international elective at Oxford University Hospitals, UK.
+  Alongside clinical training, I have held leadership roles including Senior Vice
+  President of the Flinders Medical Student Society and representative positions
+  with AMA SA, SA MET, the South Australian Clinical Training Council and AMA
+  Doctors in Training. My research experience includes publications and
+  international presentations in psychiatry, neuroimaging and health equity,
+  including receipt of the Royal College of Psychiatrists International Congress
+  Bursary Award for the highest-scoring abstract in the West Pacific Division.
+  I have a strong interest in rural and regional healthcare, mental health and
+  medical education, and am seeking opportunities to further develop broad
+  generalist clinical skills while contributing to high-quality patient care and
+  multidisciplinary teams.
+
+# ---------------------------------------------------------------------------
+education:
+  - period: "2022–2025"
+    qualification: "Doctor of Medicine"
+    institution: "Flinders University"
+    location: "Bedford Park, SA"
+  - period: "2021"
+    qualification: "Graduate Certificate in Disability Studies"
+    institution: "Flinders University"
+    location: "Bedford Park, SA"
+  - period: "2020"
+    qualification: "Bachelor of Biomedicine (Honours)"
+    institution: "University of Melbourne"
+    location: "Parkville, VIC"
+  - period: "2017–2019"
+    qualification: "Bachelor of Biomedicine"
+    institution: "University of Melbourne"
+    location: "Parkville, VIC"
+
+# ---------------------------------------------------------------------------
+clinical_experience:
+  - role: "Intern (PGY1)"
+    place: "Mount Gambier Hospital"
+    period: "2026"
+    rotations:
+      - "Emergency Medicine (two terms)"
+      - "General Medicine"
+      - "General Practice"
+      - "Orthopaedics"
+  - role: "Psychiatry"
+    place: "Mount Gambier Hospital, SA"
+    period: "2025"
+    rotations: []
+  - role: "Upper Gastrointestinal Surgery"
+    place: "Oxford University Hospitals NHS Foundation Trust, UK"
+    period: "2025"
+    rotations: []
+  - role: "Clinical rotations"
+    place: "Flinders Medical Centre, SA"
+    period: "2024–2025"
+    rotations:
+      - "General Medicine, General Surgery, Emergency Medicine, Paediatrics, Psychiatry, General Practice, Obstetrics & Gynaecology, Respiratory Medicine, Vascular Surgery and Palliative Care"
+
+# ---------------------------------------------------------------------------
+# Professional Development — courses, certificates and conferences
+development:
+  - group: "Credentials & Certificates"
+    items:
+      - "Advanced Paediatric Life Support (APLS) — June 2026"
+      - "Advanced Life Support Level 2 (ALS2) — April 2026"
+  - group: "Conferences & Academic Meetings"
+    items:
+      - "Royal Australian and New Zealand College of Psychiatrists (RANZCP) Congress — Psychiatry Interest Forum (PIF) Scholar (2026)"
+      - "Royal College of Psychiatrists International Congress, Wales, United Kingdom (2025)"
+      - "Australasian Society for Medical Research (ASMR) Conference, Brisbane (2025)"
+      - "Panellist — Person Led, Person Centred Approaches to Physical Health & Wellbeing, Equally Well Australia Conference (2025)"
+      - "SAHLN Research Week (2025)"
+      - "Royal Australasian College of Surgeons (RACS) Tri-State Annual Scientific Meeting"
+      - "AMSA Global Health Conference — Development Grant Recipient (2024)"
+      - "AMSA Careers Conference (2023)"
+      - "Australasian Students' Surgical Conference (2023)"
+  - group: "Rural & Regional Health Activities"
+    items:
+      - "Psychiatry Interest Forum Rural Psychiatry Short Course, Mount Gambier (2025)"
+      - "Rural GP Obstetrics Weekend, Murray Bridge — Rural Doctors Workforce Agency (RDWA) (2025)"
+      - "Farmageddon Rural Health Weekend, Mannum — Rural Doctors Association of South Australia (RDASA) (2025)"
+      - "Clinical Skills Weekend, Quorn — Rural Doctors Workforce Agency (RDWA)"
+      - "Riverland Rural Health Weekend — Flinders University Rural Health Group of South Australia (FURGHS)"
+  - group: "Emergency Medicine Education and Training (EMET)"
+    items:
+      - "Medical Emergency Simulation, Mount Gambier (February 2026)"
+      - "Paediatric Sepsis: A Case Review, Mount Gambier (March 2026)"
+      - "Orthopaedic Emergencies Workshop, Mount Gambier (May 2026)"
+      - "Toxicology Emergencies Workshop, Mount Gambier (June 2026)"
+
+# ---------------------------------------------------------------------------
+awards:
+  - year: "2025"
+    name: "International Congress 2025 Bursary Award — for submitting the top-scoring abstract of the conference in the West Pacific Division (Wales, UK)"
+    institution: "Royal College of Psychiatrists International Congress"
+  - year: "2022"
+    name: "Rural Psychiatry Scholarship Award Recipient"
+    institution: "Psychiatry Interest Forum (PIF) × Australian Medical Students' Association (AMSA)"
+  - year: "2020"
+    name: "Runner-Up, AMSA Code Green Hackathon — awarded $3,500 grant for our project, Leaf Rating"
+    institution: "Australian Medical Students' Association"
+  - year: "2020"
+    name: "Honours Department Award — in recognition of top performance in the Department of Psychiatry"
+    institution: "Royal Melbourne Hospital (RMH)"
+  - year: "2020"
+    name: "First Prize Winner, Strive Case Competition — recognised for a highly realistic, well-founded approach to equitable solutions for Culturally and Linguistically Diverse (CALD) communities during the COVID-19 pandemic"
+    institution: "Strive Melbourne"
+  - year: "2019"
+    name: "Leader in Community Award"
+    institution: "University of Melbourne"
+  - year: "2017–2019"
+    name: "Mary Jane Lewis Scholarship Recipient — awarded $30,000 based on merit and equity"
+    institution: "University of Melbourne"
+
+# ---------------------------------------------------------------------------
+research:
+  - group: "Published Works"
+    items:
+      - year: "2022"
+        text: "Whittle, S. et al. Harsh and Inconsistent Parental Discipline Is Associated With Altered Cortical Development in Children. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em> (2022)."
+  - group: "Presentations"
+    items:
+      - year: "2025"
+        text: "'Overlooked Population: Physical Health Care for Young, Non-Binary, and Rural Patients with Severe Mental Illness.' Royal College of Psychiatrists International Congress, Wales, UK."
+      - year: "2025"
+        text: "'Examining the Association between Adverse Parenting Behaviour and Anterior Pituitary Gland Volume Development.' Royal College of Psychiatrists International Congress, Wales, UK."
+      - year: "2020"
+        text: "'Examining the Association between Adverse Parenting Behaviour and Anterior Pituitary Gland Volume Development.' Biomed Link Conference, Melbourne, Australia."
+      - year: "2019"
+        text: "'Birthdating Graft-derived VmDA Neurons for Stem Cell Therapy in Parkinson's Disease.' Biomed Link Conference, Melbourne, Australia."
+  - group: "Other Research Involvement"
+    items:
+      - year: "2017–2018"
+        text: "'Sex Differences in Contextual Fear Learning in Juvenile Rats.' Florey Institute of Mental Health and Neuroscience. Supervisors: A/Prof Jee Hyun Kim & Dr Chun-Hui Johnny Park."
+
+# ---------------------------------------------------------------------------
+leadership:
+  - role: "Intern Representative, Mount Gambier Hospital, South Australia"
+    detail: "JMO representative of South Australian Education and Training"
+    period: "2026"
+  - role: "Senior Vice President, Flinders Medical Student Society (FMSS)"
+    detail: "Student Representative of: Australian Medical Association (AMA) SA · AMA Doctors in Training · SA Medical Education and Training (SA MET) JMO Forum · SA Clinical Training Council"
+    period: "2025"
+  - role: "Health and Human Rights Group (HHRG)"
+    detail: "President (2023) · Global Health and Refugee Health Officer (2024) · Environment Health Officer (2022)"
+    period: "2022–2024"
+  - role: "Flinders Surgical Student Society (FUSS)"
+    detail: "Academic Officer"
+    period: "2022–2023"
+  - role: "South Australian Skin Society (SASS)"
+    detail: "IT Officer"
+    period: "2022"
+  - role: "Honours Students Representative, Royal Melbourne Hospital"
+    detail: ""
+    period: "2020"
+  - role: "Student Representative, Bachelor of Biomedicine"
+    detail: "University of Melbourne"
+    period: "2017–2019"
+
+# ---------------------------------------------------------------------------
+volunteering:
+  - period: "May 2026 – Present"
+    role: "Volunteer"
+    organisation: "Ride for Disabled Australia"
+    location: "Mount Gambier, South Australia"
+  - period: "2017 – 2019"
+    role: "Church Band Leader & Vocalist"
+    organisation: "Syndal Baptist Church — Korean Branch"
+    location: "Melbourne, Victoria"
+  - period: "May 2013 – Dec 2020"
+    role: "Director of Internal Operations / Team Leader"
+    organisation: "Community Based Health Project (CBHP)"
+    location: "Melbourne, Victoria"
+  - period: "Mar 2018 – Jul 2019"
+    role: "Teddy Doctor — familiarising children with the healthcare environment"
+    organisation: "Teddy Bear Hospital"
+    location: "Melbourne, Victoria"
+
+# ---------------------------------------------------------------------------
+interests:
+  - title: "Music"
+    items:
+      - "Singing and guitar; lead singer, Korean Service, Syndal Baptist Church (2017–2020)"
+      - "Performed as Dr Glinda in <em>Doctor of Oz</em> (MedRevue, Flinders University, 2023)"
+  - title: "Travelling & Photography"
+    items:
+      - "Enjoy landscape and travel photography"
+  - title: "Food & Community"
+    items:
+      - "President and Founding Member, Chocolate Lover's Society, University of Melbourne (2017–2020) — recipient of the Students' Favourite Award"
+      - "Vice President, Cheese Club, University of Melbourne (2018)"
+      - "Committee Member, Coffee Club, University of Melbourne (2017–2019)"
+
+interests_closing: >-
+  I enjoy bringing people together around shared interests and have often found
+  myself helping build communities, organise events, and sustain projects over
+  time. Whether through music, student societies, or personal creative pursuits,
+  I am naturally curious and enjoy turning ideas into lasting initiatives.

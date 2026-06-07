@@ -1,0 +1,25 @@
+title: Julia Minji Kim
+tagline: "Doctor of Medicine · Intern, Mount Gambier Hospital"
+description: >-
+  Personal website of Dr Julia Minji Kim — Doctor of Medicine and intern at
+  Mount Gambier Hospital, with clinical experience across regional and
+  metropolitan South Australia and interests in rural and regional healthcare,
+  mental health and medical education.
+email: Juliakim370@gmail.com
+# This repo (juliakim1023/juliakim.github.io) publishes as a PROJECT page at
+# https://juliakim1023.github.io/juliakim.github.io/
+# If you later create a repo named exactly "juliakim1023.github.io", change
+# baseurl back to "" and url to "https://juliakim1023.github.io".
+url: "https://juliakim1023.github.io"
+baseurl: "/juliakim.github.io"
+
+# Build settings
+markdown: kramdown
+encoding: utf-8
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore

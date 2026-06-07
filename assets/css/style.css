@@ -1,0 +1,159 @@
+/* ---------------------------------------------------------------------------
+   Julia Minji Kim — personal site
+   Palette: warm ivory background, deep teal accent, slate text
+--------------------------------------------------------------------------- */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1f2a2e;
+  --muted: #5d6b70;
+  --accent: #1f6f78;
+  --accent-soft: #e6f0f0;
+  --line: #e7e4dd;
+  --shadow: 0 1px 3px rgba(31, 42, 46, .06), 0 8px 24px rgba(31, 42, 46, .05);
+  --radius: 14px;
+  --maxw: 880px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- Navigation ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 250, 247, .85);
+  backdrop-filter: saturate(160%) blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.nav-brand { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 4px 14px; list-style: none; margin: 0; padding: 0; }
+.nav-links a { color: var(--muted); font-size: .9rem; font-weight: 500; }
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+
+/* ---------- Layout ---------- */
+main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 96px; }
+
+section { padding-top: 64px; }
+section > h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0 0 24px;
+  letter-spacing: -.01em;
+}
+section > h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 10px;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* ---------- Hero ---------- */
+.hero { padding-top: 72px; }
+.hero h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -.02em;
+  margin: 0 0 12px;
+}
+.hero .role { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin: 0 0 6px; }
+.hero .meta { color: var(--muted); font-size: .98rem; margin: 0 0 28px; }
+.hero .meta a { color: var(--muted); }
+.hero .lead { font-size: 1.12rem; color: var(--ink); max-width: 62ch; }
+
+/* ---------- Cards & lists ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+}
+
+.entry { display: grid; grid-template-columns: 130px 1fr; gap: 6px 22px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.entry:last-child { border-bottom: 0; }
+.entry .period { color: var(--accent); font-weight: 600; font-size: .92rem; padding-top: 2px; }
+.entry .body h3 { margin: 0 0 2px; font-size: 1.05rem; font-weight: 600; }
+.entry .body .sub { color: var(--muted); font-size: .95rem; margin: 0; }
+.entry .body ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); }
+.entry .body ul li { margin: 2px 0; }
+
+.group-title {
+  font-size: .82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+.group + .group { margin-top: 8px; }
+
+.clean-list { list-style: none; margin: 0; padding: 0; }
+.clean-list li {
+  position: relative;
+  padding: 8px 0 8px 22px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+.clean-list li:last-child { border-bottom: 0; }
+.clean-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px; top: 16px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.interests-grid { display: grid; gap: 16px; }
+.interests-grid .card h3 { margin: 0 0 10px; font-size: 1.05rem; }
+.interests-grid .card ul { margin: 0; padding-left: 18px; color: var(--muted); }
+.closing { margin-top: 18px; font-style: italic; color: var(--muted); }
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+  padding: 32px 24px 48px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .entry { grid-template-columns: 1fr; gap: 2px; }
+  .entry .period { padding-top: 0; }
+  .nav-links { display: none; }
+}

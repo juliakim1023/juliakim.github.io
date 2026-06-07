@@ -1,0 +1,169 @@
+---
+layout: default
+title: Home
+---
+{% assign cv = site.data.cv %}
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-brand">{{ cv.profile.name }}</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#clinical">Clinical</a></li>
+      <li><a href="#development">Development</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#volunteering">Volunteering</a></li>
+      <li><a href="#interests">Interests</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO / ABOUT -->
+  <header class="hero" id="about">
+    <h1>{{ cv.profile.name }}</h1>
+    <p class="role">{{ cv.profile.title }}</p>
+    <p class="meta">
+      {{ cv.profile.location }} ·
+      <a href="mailto:{{ cv.profile.email }}">{{ cv.profile.email }}</a>
+    </p>
+    <p class="lead">{{ cv.summary }}</p>
+  </header>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      {% for e in cv.education %}
+      <div class="entry">
+        <div class="period">{{ e.period }}</div>
+        <div class="body">
+          <h3>{{ e.qualification }}</h3>
+          <p class="sub">{{ e.institution }} · {{ e.location }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CLINICAL EXPERIENCE -->
+  <section id="clinical">
+    <h2>Clinical Experience</h2>
+    <div class="card">
+      {% for c in cv.clinical_experience %}
+      <div class="entry">
+        <div class="period">{{ c.period }}</div>
+        <div class="body">
+          <h3>{{ c.role }}</h3>
+          <p class="sub">{{ c.place }}</p>
+          {% if c.rotations.size > 0 %}
+          <ul>
+            {% for r in c.rotations %}<li>{{ r }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL DEVELOPMENT -->
+  <section id="development">
+    <h2>Professional Development</h2>
+    {% for g in cv.development %}
+    <div class="card group">
+      <p class="group-title">{{ g.group }}</p>
+      <ul class="clean-list">
+        {% for item in g.items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <h2>Achievements & Awards</h2>
+    <div class="card">
+      {% for a in cv.awards %}
+      <div class="entry">
+        <div class="period">{{ a.year }}</div>
+        <div class="body">
+          <h3>{{ a.name }}</h3>
+          <p class="sub">{{ a.institution }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research, Publications & Presentations</h2>
+    {% for g in cv.research %}
+    <div class="card group">
+      <p class="group-title">{{ g.group }}</p>
+      {% for item in g.items %}
+      <div class="entry">
+        <div class="period">{{ item.year }}</div>
+        <div class="body"><p class="sub" style="color:var(--ink)">{{ item.text }}</p></div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <h2>Leadership Roles</h2>
+    <div class="card">
+      {% for l in cv.leadership %}
+      <div class="entry">
+        <div class="period">{{ l.period }}</div>
+        <div class="body">
+          <h3>{{ l.role }}</h3>
+          {% if l.detail != "" %}<p class="sub">{{ l.detail }}</p>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- VOLUNTEERING -->
+  <section id="volunteering">
+    <h2>Volunteering</h2>
+    <div class="card">
+      {% for v in cv.volunteering %}
+      <div class="entry">
+        <div class="period">{{ v.period }}</div>
+        <div class="body">
+          <h3>{{ v.role }}</h3>
+          <p class="sub">{{ v.organisation }} · {{ v.location }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests">
+    <h2>Personal Interests</h2>
+    <div class="interests-grid">
+      {% for i in cv.interests %}
+      <div class="card">
+        <h3>{{ i.title }}</h3>
+        <ul>
+          {% for item in i.items %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="closing">{{ cv.interests_closing }}</p>
+  </section>
+</main>
+
+<footer>
+  © {{ cv.profile.name }} · Built with Jekyll &amp; GitHub Pages
+</footer>
