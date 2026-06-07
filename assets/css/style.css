@@ -12,7 +12,9 @@
   --line: #e7e4dd;
   --shadow: 0 1px 3px rgba(31, 42, 46, .06), 0 8px 24px rgba(31, 42, 46, .05);
   --radius: 14px;
-  --maxw: 880px;
+  --maxw: 900px;
+  /* Horizontal page padding that grows with the viewport */
+  --gutter: clamp(20px, 4vw, 48px);
 }
 
 * { box-sizing: border-box; }
@@ -24,7 +26,8 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-size: 17px;
+  /* Fluid base size: ~16px on phones up to ~18px on large screens */
+  font-size: clamp(16px, 1rem + 0.18vw, 18px);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -44,7 +47,7 @@ a:hover { text-decoration: underline; }
 .nav-inner {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 12px var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,9 +59,9 @@ a:hover { text-decoration: underline; }
 .nav-links a:hover { color: var(--accent); text-decoration: none; }
 
 /* ---------- Layout ---------- */
-main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 96px; }
+main { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gutter) 96px; }
 
-section { padding-top: 64px; }
+section { padding-top: clamp(48px, 7vw, 80px); }
 section > h2 {
   font-family: "Lora", Georgia, serif;
   font-weight: 600;
@@ -146,7 +149,7 @@ section > h2::after {
   background: var(--accent);
 }
 
-.interests-grid { display: grid; gap: 16px; }
+.interests-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .interests-grid .card h3 { margin: 0 0 10px; font-size: 1.05rem; }
 .interests-grid .card ul { margin: 0; padding-left: 18px; color: var(--muted); }
 .closing { margin-top: 18px; font-style: italic; color: var(--muted); }
@@ -157,15 +160,46 @@ footer {
   text-align: center;
   color: var(--muted);
   font-size: .9rem;
-  padding: 32px 24px 48px;
+  padding: 32px var(--gutter) 48px;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------------------------------------------------------------------------
+   Responsive breakpoints
+   phone (<=600) · tablet (<=900) · laptop (default) · wide (>=1500)
+--------------------------------------------------------------------------- */
+
+/* Wide monitors: widen the column and let type breathe a little */
+@media (min-width: 1500px) {
+  :root { --maxw: 1080px; }
+}
+
+/* Tablet: tighten the period column so entries don't feel sparse */
+@media (max-width: 900px) {
+  .entry { grid-template-columns: 104px 1fr; gap: 6px 18px; }
+  .hero { gap: 28px; }
+  .headshot { width: 120px; height: 120px; }
+}
+
+/* Phone */
 @media (max-width: 600px) {
-  body { font-size: 16px; }
+  html { scroll-padding-top: 112px; }
   .entry { grid-template-columns: 1fr; gap: 2px; }
   .entry .period { padding-top: 0; }
-  .nav-links { display: none; }
   .hero { flex-direction: column-reverse; align-items: center; text-align: center; gap: 20px; }
-  .headshot { width: 120px; height: 120px; }
+  .headshot { width: 116px; height: 116px; }
+  .hero .lead { max-width: none; }
+  .card { padding: 18px 18px; }
+
+  /* Keep the nav usable: brand on top, links become a horizontal scroll row */
+  .nav-inner { flex-direction: column; align-items: stretch; gap: 8px; padding: 10px var(--gutter); }
+  .nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 18px;
+    padding-bottom: 2px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
