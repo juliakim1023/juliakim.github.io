@@ -28,7 +28,7 @@ summary: >-
 
 # ---------------------------------------------------------------------------
 education:
-  - period: "2022–2025"
+  - period: "2022-2025"
     qualification: "Doctor of Medicine"
     institution: "Flinders University"
     location: "Bedford Park, SA"
@@ -40,60 +40,60 @@ education:
     qualification: "Bachelor of Biomedicine (Honours)"
     institution: "University of Melbourne"
     location: "Parkville, VIC"
-  - period: "2017–2019"
+  - period: "2017-2019"
     qualification: "Bachelor of Biomedicine"
     institution: "University of Melbourne"
     location: "Parkville, VIC"
 
 # ---------------------------------------------------------------------------
-clinical_experience:
-  - role: "Intern (PGY1)"
-    place: "Mount Gambier Hospital"
-    period: "2026"
-    rotations:
-      - "Emergency Medicine (two terms)"
-      - "General Medicine"
-      - "General Practice"
-      - "Orthopaedics"
-  - role: "Psychiatry"
-    place: "Mount Gambier Hospital, SA"
+# Clinical Experience is split into the current internship (as a doctor) and
+# the clinical placements completed earlier as a medical student.
+clinical_current:
+  role: "Intern (PGY1)"
+  place: "Mount Gambier Hospital"
+  period: "2026"
+  rotations:
+    - "Emergency Medicine (two terms)"
+    - "General Medicine"
+    - "General Practice"
+    - "Orthopaedics"
+
+clinical_student:
+  - place: "Mount Gambier Hospital, SA"
+    specialty: "Psychiatry"
     period: "2025"
-    rotations: []
-  - role: "Upper Gastrointestinal Surgery"
-    place: "Oxford University Hospitals NHS Foundation Trust, UK"
+  - place: "Oxford University Hospitals NHS Foundation Trust, UK"
+    specialty: "Upper Gastrointestinal Surgery (international elective)"
     period: "2025"
-    rotations: []
-  - role: "Clinical rotations"
-    place: "Flinders Medical Centre, SA"
-    period: "2024–2025"
-    rotations:
-      - "General Medicine, General Surgery, Emergency Medicine, Paediatrics, Psychiatry, General Practice, Obstetrics & Gynaecology, Respiratory Medicine, Vascular Surgery and Palliative Care"
+  - place: "Flinders Medical Centre, SA"
+    specialty: "General Medicine, General Surgery, Emergency Medicine, Paediatrics, Psychiatry, General Practice, Obstetrics & Gynaecology, Respiratory Medicine, Vascular Surgery and Palliative Care"
+    period: "2024-2025"
 
 # ---------------------------------------------------------------------------
 # Professional Development — courses, certificates and conferences
 development:
   - group: "Credentials & Certificates"
     items:
-      - "Advanced Paediatric Life Support (APLS) — June 2026"
-      - "Advanced Life Support Level 2 (ALS2) — April 2026"
+      - "Advanced Paediatric Life Support (APLS), June 2026"
+      - "Advanced Life Support Level 2 (ALS2), April 2026"
   - group: "Conferences & Academic Meetings"
     items:
-      - "Royal Australian and New Zealand College of Psychiatrists (RANZCP) Congress — Psychiatry Interest Forum (PIF) Scholar (2026)"
+      - "Royal Australian and New Zealand College of Psychiatrists (RANZCP) Congress · Psychiatry Interest Forum (PIF) Scholar (2026)"
       - "Royal College of Psychiatrists International Congress, Wales, United Kingdom (2025)"
       - "Australasian Society for Medical Research (ASMR) Conference, Brisbane (2025)"
-      - "Panellist — Person Led, Person Centred Approaches to Physical Health & Wellbeing, Equally Well Australia Conference (2025)"
+      - "Panellist, Person Led and Person Centred Approaches to Physical Health & Wellbeing, Equally Well Australia Conference (2025)"
       - "SAHLN Research Week (2025)"
       - "Royal Australasian College of Surgeons (RACS) Tri-State Annual Scientific Meeting"
-      - "AMSA Global Health Conference — Development Grant Recipient (2024)"
+      - "AMSA Global Health Conference · Development Grant Recipient (2024)"
       - "AMSA Careers Conference (2023)"
       - "Australasian Students' Surgical Conference (2023)"
   - group: "Rural & Regional Health Activities"
     items:
       - "Psychiatry Interest Forum Rural Psychiatry Short Course, Mount Gambier (2025)"
-      - "Rural GP Obstetrics Weekend, Murray Bridge — Rural Doctors Workforce Agency (RDWA) (2025)"
-      - "Farmageddon Rural Health Weekend, Mannum — Rural Doctors Association of South Australia (RDASA) (2025)"
-      - "Clinical Skills Weekend, Quorn — Rural Doctors Workforce Agency (RDWA)"
-      - "Riverland Rural Health Weekend — Flinders University Rural Health Group of South Australia (FURGHS)"
+      - "Rural GP Obstetrics Weekend, Murray Bridge · Rural Doctors Workforce Agency (RDWA) (2025)"
+      - "Farmageddon Rural Health Weekend, Mannum · Rural Doctors Association of South Australia (RDASA) (2025)"
+      - "Clinical Skills Weekend, Quorn · Rural Doctors Workforce Agency (RDWA)"
+      - "Riverland Rural Health Weekend · Flinders University Rural Health Group of South Australia (FURGHS)"
   - group: "Emergency Medicine Education and Training (EMET)"
     items:
       - "Medical Emergency Simulation, Mount Gambier (February 2026)"
@@ -104,25 +104,25 @@ development:
 # ---------------------------------------------------------------------------
 awards:
   - year: "2025"
-    name: "International Congress 2025 Bursary Award — for submitting the top-scoring abstract of the conference in the West Pacific Division (Wales, UK)"
+    name: "International Congress 2025 Bursary Award for submitting the top-scoring abstract of the conference in the West Pacific Division (Wales, UK)"
     institution: "Royal College of Psychiatrists International Congress"
   - year: "2022"
     name: "Rural Psychiatry Scholarship Award Recipient"
-    institution: "Psychiatry Interest Forum (PIF) × Australian Medical Students' Association (AMSA)"
+    institution: "Psychiatry Interest Forum (PIF) and Australian Medical Students' Association (AMSA)"
   - year: "2020"
-    name: "Runner-Up, AMSA Code Green Hackathon — awarded $3,500 grant for our project, Leaf Rating"
+    name: "Runner-Up, AMSA Code Green Hackathon, awarded a $3,500 grant for our project (Leaf Rating)"
     institution: "Australian Medical Students' Association"
   - year: "2020"
-    name: "Honours Department Award — in recognition of top performance in the Department of Psychiatry"
+    name: "Honours Department Award in recognition of top performance in the Department of Psychiatry"
     institution: "Royal Melbourne Hospital (RMH)"
   - year: "2020"
-    name: "First Prize Winner, Strive Case Competition — recognised for a highly realistic, well-founded approach to equitable solutions for Culturally and Linguistically Diverse (CALD) communities during the COVID-19 pandemic"
+    name: "First Prize Winner, Strive Case Competition, recognised for a highly realistic and well-founded approach to equitable solutions for Culturally and Linguistically Diverse (CALD) communities during the COVID-19 pandemic"
     institution: "Strive Melbourne"
   - year: "2019"
     name: "Leader in Community Award"
     institution: "University of Melbourne"
-  - year: "2017–2019"
-    name: "Mary Jane Lewis Scholarship Recipient — awarded $30,000 based on merit and equity"
+  - year: "2017-2019"
+    name: "Mary Jane Lewis Scholarship Recipient, awarded $30,000 based on merit and equity"
     institution: "University of Melbourne"
 
 # ---------------------------------------------------------------------------
@@ -143,8 +143,8 @@ research:
         text: "'Birthdating Graft-derived VmDA Neurons for Stem Cell Therapy in Parkinson's Disease.' Biomed Link Conference, Melbourne, Australia."
   - group: "Other Research Involvement"
     items:
-      - year: "2017–2018"
-        text: "'Sex Differences in Contextual Fear Learning in Juvenile Rats.' Florey Institute of Mental Health and Neuroscience. Supervisors: A/Prof Jee Hyun Kim & Dr Chun-Hui Johnny Park."
+      - year: "2017-2018"
+        text: "'Sex Differences in Contextual Fear Learning in Juvenile Rats.' Florey Institute of Mental Health and Neuroscience. Supervisors: A/Prof Jee Hyun Kim and Dr Chun-Hui Johnny Park."
 
 # ---------------------------------------------------------------------------
 leadership:
@@ -156,10 +156,10 @@ leadership:
     period: "2025"
   - role: "Health and Human Rights Group (HHRG)"
     detail: "President (2023) · Global Health and Refugee Health Officer (2024) · Environment Health Officer (2022)"
-    period: "2022–2024"
+    period: "2022-2024"
   - role: "Flinders Surgical Student Society (FUSS)"
     detail: "Academic Officer"
-    period: "2022–2023"
+    period: "2022-2023"
   - role: "South Australian Skin Society (SASS)"
     detail: "IT Officer"
     period: "2022"
@@ -168,24 +168,24 @@ leadership:
     period: "2020"
   - role: "Student Representative, Bachelor of Biomedicine"
     detail: "University of Melbourne"
-    period: "2017–2019"
+    period: "2017-2019"
 
 # ---------------------------------------------------------------------------
 volunteering:
-  - period: "May 2026 – Present"
+  - period: "May 2026 to Present"
     role: "Volunteer"
     organisation: "Ride for Disabled Australia"
     location: "Mount Gambier, South Australia"
-  - period: "2017 – 2019"
-    role: "Church Band Leader & Vocalist"
-    organisation: "Syndal Baptist Church — Korean Branch"
+  - period: "2017 to 2019"
+    role: "Church Band Leader and Vocalist"
+    organisation: "Syndal Baptist Church (Korean Branch)"
     location: "Melbourne, Victoria"
-  - period: "May 2013 – Dec 2020"
+  - period: "May 2013 to Dec 2020"
     role: "Director of Internal Operations / Team Leader"
     organisation: "Community Based Health Project (CBHP)"
     location: "Melbourne, Victoria"
-  - period: "Mar 2018 – Jul 2019"
-    role: "Teddy Doctor — familiarising children with the healthcare environment"
+  - period: "Mar 2018 to Jul 2019"
+    role: "Teddy Doctor, familiarising children with the healthcare environment"
     organisation: "Teddy Bear Hospital"
     location: "Melbourne, Victoria"
 
@@ -193,16 +193,16 @@ volunteering:
 interests:
   - title: "Music"
     items:
-      - "Singing and guitar; lead singer, Korean Service, Syndal Baptist Church (2017–2020)"
+      - "Singing and guitar; lead singer, Korean Service, Syndal Baptist Church (2017-2020)"
       - "Performed as Dr Glinda in <em>Doctor of Oz</em> (MedRevue, Flinders University, 2023)"
   - title: "Travelling & Photography"
     items:
       - "Enjoy landscape and travel photography"
   - title: "Food & Community"
     items:
-      - "President and Founding Member, Chocolate Lover's Society, University of Melbourne (2017–2020) — recipient of the Students' Favourite Award"
+      - "President and Founding Member, Chocolate Lover's Society, University of Melbourne (2017-2020); recipient of the Students' Favourite Award"
       - "Vice President, Cheese Club, University of Melbourne (2018)"
-      - "Committee Member, Coffee Club, University of Melbourne (2017–2019)"
+      - "Committee Member, Coffee Club, University of Melbourne (2017-2019)"
 
 interests_closing: >-
   I enjoy bringing people together around shared interests and have often found

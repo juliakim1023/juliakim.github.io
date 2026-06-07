@@ -52,18 +52,29 @@ title: Home
   <!-- CLINICAL EXPERIENCE -->
   <section id="clinical">
     <h2>Clinical Experience</h2>
-    <div class="card">
-      {% for c in cv.clinical_experience %}
+
+    <div class="card group">
+      <p class="group-title">Internship (as a doctor)</p>
+      <div class="entry">
+        <div class="period">{{ cv.clinical_current.period }}</div>
+        <div class="body">
+          <h3>{{ cv.clinical_current.role }}</h3>
+          <p class="sub">{{ cv.clinical_current.place }}</p>
+          <ul>
+            {% for r in cv.clinical_current.rotations %}<li>{{ r }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card group">
+      <p class="group-title">Clinical Experience as a Medical Student</p>
+      {% for c in cv.clinical_student %}
       <div class="entry">
         <div class="period">{{ c.period }}</div>
         <div class="body">
-          <h3>{{ c.role }}</h3>
-          <p class="sub">{{ c.place }}</p>
-          {% if c.rotations.size > 0 %}
-          <ul>
-            {% for r in c.rotations %}<li>{{ r }}</li>{% endfor %}
-          </ul>
-          {% endif %}
+          <h3>{{ c.place }}</h3>
+          <p class="sub">{{ c.specialty }}</p>
         </div>
       </div>
       {% endfor %}
