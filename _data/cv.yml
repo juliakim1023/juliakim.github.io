@@ -11,7 +11,7 @@ profile:
   email: "Juliakim370@gmail.com"
   # Headshot: save your photo in the repo at assets/img/headshot.jpg
   # then set the path below (leave "" to hide the photo).
-  photo: ""
+  photo: "assets/img/headshot.jpg"
   photo_alt: "Dr Julia Kim"
 
 summary: >-
