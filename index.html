@@ -24,13 +24,18 @@ title: Home
 <main>
   <!-- HERO / ABOUT -->
   <header class="hero" id="about">
-    <h1>{{ cv.profile.name }}</h1>
-    <p class="role">{{ cv.profile.title }}</p>
-    <p class="meta">
-      {{ cv.profile.location }} ·
-      <a href="mailto:{{ cv.profile.email }}">{{ cv.profile.email }}</a>
-    </p>
-    <p class="lead">{{ cv.summary }}</p>
+    <div class="hero-text">
+      <h1>{{ cv.profile.name }}</h1>
+      <p class="role">{{ cv.profile.title }}</p>
+      <p class="meta">
+        {{ cv.profile.location }} ·
+        <a href="mailto:{{ cv.profile.email }}">{{ cv.profile.email }}</a>
+      </p>
+      <p class="lead">{{ cv.summary }}</p>
+    </div>
+    {% if cv.profile.photo and cv.profile.photo != "" %}
+    <img class="headshot" src="{{ cv.profile.photo | relative_url }}" alt="{{ cv.profile.photo_alt }}">
+    {% endif %}
   </header>
 
   <!-- EDUCATION -->

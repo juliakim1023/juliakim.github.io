@@ -1,14 +1,18 @@
 # ---------------------------------------------------------------------------
 # This file holds all the content for the website.
-# Edit the text here to update the site — you do not need to touch HTML.
+# Edit the text here to update the site. You do not need to touch HTML.
 # Lines starting with "#" are notes and are ignored.
 # ---------------------------------------------------------------------------
 
 profile:
-  name: "Julia Minji Kim"
+  name: "Julia Kim"
   title: "Doctor of Medicine · Intern, Mount Gambier Hospital"
   location: "Mount Gambier, South Australia"
   email: "Juliakim370@gmail.com"
+  # Headshot: save your photo in the repo at assets/img/headshot.jpg
+  # then set the path below (leave "" to hide the photo).
+  photo: ""
+  photo_alt: "Dr Julia Kim"
 
 summary: >-
   Current intern at Mount Gambier Hospital and Doctor of Medicine graduate of
@@ -70,7 +74,7 @@ clinical_student:
     period: "2024-2025"
 
 # ---------------------------------------------------------------------------
-# Professional Development — courses, certificates and conferences
+# Professional Development: courses, certificates and conferences
 development:
   - group: "Credentials & Certificates"
     items:
