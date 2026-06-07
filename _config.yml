@@ -6,12 +6,10 @@ description: >-
   metropolitan South Australia and interests in rural and regional healthcare,
   mental health and medical education.
 email: Juliakim370@gmail.com
-# This repo (juliakim1023/juliakim.github.io) publishes as a PROJECT page at
-# https://juliakim1023.github.io/juliakim.github.io/
-# If you later create a repo named exactly "juliakim1023.github.io", change
-# baseurl back to "" and url to "https://juliakim1023.github.io".
-url: "https://juliakim1023.github.io"
-baseurl: "/juliakim.github.io"
+# This repo is named drjuliakim.github.io (matches the account name), so it
+# publishes as a USER page at the root: https://drjuliakim.github.io/
+url: "https://drjuliakim.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
