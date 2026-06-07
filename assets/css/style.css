@@ -77,15 +77,15 @@ section > h2::after {
 }
 
 /* ---------- Hero ---------- */
-.hero { padding-top: 72px; display: flex; gap: 40px; align-items: flex-start; }
+.hero { padding-top: 72px; display: flex; gap: 36px; align-items: center; }
 .hero-text { flex: 1; min-width: 0; }
 .headshot {
   flex-shrink: 0;
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid var(--surface);
+  border: 4px solid var(--surface);
   box-shadow: var(--shadow);
 }
 .hero h1 {
@@ -167,5 +167,5 @@ footer {
   .entry .period { padding-top: 0; }
   .nav-links { display: none; }
   .hero { flex-direction: column-reverse; align-items: center; text-align: center; gap: 20px; }
-  .headshot { width: 150px; height: 150px; }
+  .headshot { width: 120px; height: 120px; }
 }
